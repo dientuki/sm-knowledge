@@ -30,7 +30,12 @@ final class SetupCommand extends Command
 
         $this->setName('setup');
         $this->setDescription('Configuration and database installation');
-        $this->isFresh = $this->askBoolean('is a Fresh instalation?', true);
+        if (isset($_env['PWD'])) {
+            $this->isFresh = $this->askBoolean('is a Fresh instalation?', true);
+        } else {
+            $this->isFresh = false;
+        }
+        
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int

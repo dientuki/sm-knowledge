@@ -9,7 +9,10 @@ Based on Slim 4 Skeleton
 
 ## Installation
 
-`composer install`
+`
+composer install
+php bin/console setup
+`
 
 ## Common usage
 
