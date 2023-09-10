@@ -214,7 +214,18 @@ final class SetupCommand extends Command
             '--configuration' => './phinx.yaml'
         ];
     
-        $input = new ArrayInput($arguments);
+        //$input = new ArrayInput($arguments);
         $command->run(new ArrayInput($arguments), $output);
+
+        $command = $phinx->find('seed:run');    
+        $arguments = [
+            'command'         => 'seed:run',
+            '--environment'   => 'development',
+            '--configuration' => './phinx.yaml'
+        ];
+    
+        //$input = new ArrayInput($arguments);
+        $command->run(new ArrayInput($arguments), $output);
+
     }
 }
