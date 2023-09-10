@@ -1,0 +1,35 @@
+paths:
+    migrations: '%%PHINX_CONFIG_DIR%%/resources/migrations'
+    seeds: '%%PHINX_CONFIG_DIR%%/resources/seeds'
+
+environments:
+    default_migration_table: phinxlog
+    default_environment: development
+    production:
+        adapter: mysql
+        host: mariadb
+        name: knwl_prod
+        user: knwl
+        pass: knwl
+        port: 3306
+        charset: utf8
+
+    development:
+        adapter: mysql
+        host: mariadb
+        name: knwl_dev
+        user: knwl
+        pass: knwl
+        port: 3306
+        charset: utf8
+
+    testing:
+        adapter: mysql
+        host: mariadb
+        name: knwl_test
+        user: knwl
+        pass: knwl
+        port: 3306
+        charset: utf8
+
+version_order: creation
