@@ -41,19 +41,19 @@ tmp/*
 
 !tmp/translations/
 tmp/translations/*
-!tmp/translations/empty
+!tmp/translations/.gitkeep
 
 !tmp/assets/
 tmp/assets/*
-!tmp/assets/empty
+!tmp/assets/.gitkeep
 
 !tmp/twig/
 tmp/twig/*
-!tmp/twig/empty
+!tmp/twig/.gitkeep
 
 !tmp/routes/
 tmp/routes/*
-!tmp/routes/empty
+!tmp/routes/.gitkeep
 
 !logs/
 logs/*
