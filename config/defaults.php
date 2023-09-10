@@ -65,7 +65,6 @@ $settings['db'] = [
 
 // Console commands
 $settings['commands'] = [
-    \App\Console\ExampleCommand::class,
     \App\Console\SetupCommand::class,
 ];
 
